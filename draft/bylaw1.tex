@@ -1,4 +1,9 @@
+% vim: textwidth=0 noexpandtab shiftwidth=8 softtabstop=8
 \documentclass{report}
+
+% Comments are not intended to make it into the final document!
+\usepackage{color}
+\newcommand\comment{\par\color{red}\small\sf}
 
 \renewcommand{\theenumi}{\arabic{enumi}}
 \renewcommand{\labelenumi}{(\theenumi)}
@@ -26,6 +31,8 @@
 
 \begin{enumerate}
 	\section*{\sc Preamble}
+
+	\item[]{\comment I'm not sure that margin notes belong in the preamble.}
 	
 	\item\marginpar{\em Involuntary Membership}We the Undergraduate Students of the School of Computer Science at Carleton University, for the purposes of greater social and academic cohesion for the duration of our time at Carleton University, do recognize the {\em Carleton Computer Science Society} and our membership therein;
 
@@ -40,6 +47,7 @@
 	\section*{\sc Short Title}
 
 	\item\marginpar{\em Short Title}The Bylaws of the {\em Carleton Computer Science Society} may be henceforth cited as the {\em Consitution of the Carleton Computer Science Society}.
+        {\comment Wait, all bylaws comprise the Constitution? (This is relevant later, for enacting/amending new bylaws, and for amending this Constitution.)}
 
 	\section*{\sc Definitions and Interpretations}
 	
@@ -54,9 +62,11 @@
 			\item to promote the social and academic values associated with the study of Computer Science at Carleton University;
 			\item to provide services related to, but not limited to, socialization, academics and industry associated with the field of Computer Science; and,
 			\item to maintain status as a departmental society of Carleton University, as per the {\em Accreditation of Student Organizations Policy}.
+                        {\comment This is a good thing, but the Policy on the Secretariat's site (which may be out of date) says ``Memberships in accredited Student Organizations other than CUSA, GSA and RRRA shall be open to all members of the University community,'' which may contradict the Membership of the Society provisions. Also of note: except for CUSA, GSA, and RRRA, ``incorporated societies'' can't be accredited Student Organizations.}
 		\end{enumerate}
 
 	\item\marginpar{\em Membership of the Society}The {\em Membership of the Society} shall be all Undergraduate Students of the School of Computer Science at Carleton University, enrolled in a {\em Bachelor of Computer Science} or {\em Bachelor of Computer Science with Honours}, for the period of their enrolment.
+	{\comment What about minors, double majors, etc.?}
 
 	\item\marginpar{\em Removal of a Member}A {\em Member of the Society} may be removed by
 		\begin{enumerate}
@@ -65,6 +75,7 @@
 		\end{enumerate}
 
 	\item\marginpar{\em Honourary Membership in the Society}{\em Honourary Membership} shall be conferred upon any person who is not already a {\em Member of the Society} and who has not been removed previously as a {\em Member of the Society}, at a {\em General Meeting of the Membership}.
+	{\comment Was honourary membership meant to expire ever?}
 
 	\section*{\sc Meetings of the Membership}
 
@@ -104,6 +115,7 @@
 		\begin{enumerate}
 			\item\marginpar{\em Transition of Authority}formally transition authority to conduct business to the new {\em President} and {\em Board of Directors};
 			\item\marginpar{\em Ratify and Fill Portfolios}allow the {\em President} to recommend the number of {\em portfolios}, the duties of each, and a {\em Director} for each, and for the {\em Board of Directors} to ratify or amend the recommendations, provided a majority of {\em Directors} do not hold {\em portfolio}; and,
+			{\comment So there can be at most 5 ($=\lfloor9/2\rfloor$) directors with portfolios?}
 			\item\marginpar{\em Strike and Fill Committees}allow the {\em Board of Directors} to strike and fill {\em Committees} by and from the {\em Board of Directors}, provided the majority of {\em Directors} on a {\em Committee} do not hold {\em portfolio}.
 		\end{enumerate}
 
@@ -117,6 +129,7 @@
 		\begin{enumerate}
 			\item\marginpar{\em Not in contravention}do not directly or indirectly contravene any provision contained in the {\em Constitution of the Computer Science Society}; and,
 			\item\marginpar{\em Purpose is to clarify}seek to to clarify or detail an existing provision contained herein.
+			{\comment So no bylaw may add anything really new\ldots how does this interact with the Amending Procedure at the end?}
 		\end{enumerate}
 
 	\item\marginpar{\em Execution of Documents}A resolution of the {\em Board of Directors} or any other instrument shall be executed by the signature of the {\em President} and the {\em Secretary}.
@@ -129,6 +142,7 @@
 		\begin{enumerate}
 			\item successful {\em Candidate} was nominated by two {\em Members of the Society} at the {\em Annual General Meeting}; and,
 			\item vote was conducted in a free and fair manner, through electronic balloting, and over the span of three (3) business days.
+			{\comment Do you really want to require that the balloting be electronic in the Constitution? That seems more like bylaw or standing-resolution material if it isn't left to the discretion of the Returning Officer/Electoral Officer (a post that hasn't been mentioned at all in here, but I assume must exist).}
 		\end{enumerate}
 
 	\item\marginpar{\em Selection of Directors at-large}Seven {\em Directors} at-large shall be selected, except in the case of a vacancy, by a preferential vote by and from the {\em Membership of the Society}, provided that the 
@@ -146,6 +160,7 @@
 		\end{enumerate}
 
 	\item\marginpar{\em Resignation of the President or Directors}The {\em President} or any {\em Director} may resign at any time, by submitting a letter to the {\em Chair} of the {\em Board of Directors}.
+	{\comment How does the President resign? (The president \emph{is} the chair of the Board.)}
 
 	\item\marginpar{\em Selection in the case of a vacancy}Should a vacancy occur in the office of {\em President} or in any of the {\em Directors}, the {\em Board of Directors} may fill the vacany, by and from the {\em Membership of the Society},
 		\begin{enumerate}
@@ -160,6 +175,7 @@
 	\item\marginpar{\em Jointly Managed}The finances of the {\em Society} shall be jointly managed by the {\em President} and {\em Treasurer}, who shall be assisted from time to time by the {\em Secretary}.
 
 	\item\marginpar{\em Signing Authority}The {\em President}, {\em Treasurer}, and {\em Secretary} shall be the signing authority on all accounts held in name of the {\em Society}.
+	{\comment What, all three at once? Or any one of the three? I'd expect (e.g.) a cheque to require the signatures of two of those three.}
 
 	\item\marginpar{\em Expense and Reimbursements}The {\em Society} may make such purchases as detailed in the Operating Budget, and as deemed necessary for the function and operation of the {\em Society}.
 
@@ -170,8 +186,10 @@
 	\section*{\sc Amending Formula}
 
 	\item\marginpar{\em The Membership to amend by provision}Any amendments to this document shall be proposed and agreed upon by the {\em Board of Directors}, and shall require a clear majority of the {\em Membership of the Society} to ratify each amendment proposed to a provision contained herein.
+	{\comment What is a ``clear majority''? $50\%+1$? $60\%$? Is there a quorum?}
 
 	\section*{\sc Extenuating Circumstances}
+	{\comment I understand the reason for this section, but can't there be some mechanism to remove it automatically once it's no longer required?  Like making it Bylaw 2 with an automatic self-repealing clause? \par It's also not clear whether this is setting up a new organization in the place of an old one, or just the same CCSS adopting a brand new Constitution.}
 
 	\item\marginpar{\em 2011/2012 Society Year}For the purposes of the 2011/2012 {\em Society Year}, notwithstanding any provision of this Bylaw or any Bylaws enacted subsequent or any Bylaw or other Constitutional document enacted previously,
 		\begin{enumerate}
@@ -180,6 +198,7 @@
 			\item\marginpar{\em Composition of the Board of Directors}the {\em Board of Directors} shall consist of Justin Campbell as {\em Chair}, Alex Clarke as {\em Secretary}, Phil Colverson, Scott Lyons, Owen MacWilliam, Simon Pratt, Tyler Fleming, Nataly Slewa, Hy Le, Gabriel Tobian, Bheesham Persaud, and Christine Laureandeau; and,
 
 			\item\marginpar{\em Portfolio designations}Alex Clarke shall hold {\em portfolio} as {\em Secretary}, Phil Colverson shall hold {\em portfolio} as {\em Treasurer}, Scott Lyons shall hold {\em portfolio} as {\em VP Services}, Owen MacWilliam shall hold {\em portfolio} as {\em VP External Affairs}, Tyler Fleming shall hold {\em portfolio} as {\em First VP Academic} and shall act as representative to the Carleton Science Student Society, Simon Pratt shall hold {\em porfolio} as {\em Second VP Academic} and shall act as representative to the School of Computer Science and the Carleton Academic Student Government, Nataly Slewa shall hold {\em portfolio} as {\em First VP Social Affairs}, and Hy Le shall hold {\em portfolio} as {\em Second VP Social Affairs}.
+			{\comment This really doesn't need to be here in any case. Once you have a Board, just hold a quick meeting to dole out the portfolios.  It'll take 5 minutes and save 10 lines in the Constitution.}
 		\end{enumerate}
 
 	\section*{\sc Execution}
